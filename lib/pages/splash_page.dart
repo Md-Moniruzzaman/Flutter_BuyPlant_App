@@ -14,26 +14,31 @@ class _SplashPageState extends State<SplashPage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const <Widget>[
-            SizedBox(
+          children: <Widget>[
+            const SizedBox(
               height: 25,
             ),
-            Text(
+            const Text(
               'Let\'s plant with us',
               style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.w900,
                   letterSpacing: 1.8),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
-            Text(
+            const Text(
               'Bring natue home',
               style: TextStyle(
                   fontSize: 18,
                   color: Colors.grey,
                   fontWeight: FontWeight.w600),
+            ),
+            SizedBox(
+              height: 450,
+              width: 450,
+              child: Image.asset('assets/images/Asset1.png'),
             )
           ],
         ),
