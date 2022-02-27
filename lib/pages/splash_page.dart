@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/models/bottom_menu.dart';
+import 'package:plant_app/widgets/bottom_nav.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -45,7 +47,10 @@ class _SplashPageState extends State<SplashPage> {
               height: 5,
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BottomNavbar()));
+              },
               child: Container(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 80.0, vertical: 12.0),
