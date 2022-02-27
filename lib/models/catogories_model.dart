@@ -4,7 +4,7 @@ class Category {
   Category({required this.id, required this.name});
 }
 
-List<Category> ctegories = [
+List<Category> categories = [
   Category(id: 0, name: 'All'),
   Category(id: 1, name: 'Outdoor'),
   Category(id: 2, name: 'Indoor'),
