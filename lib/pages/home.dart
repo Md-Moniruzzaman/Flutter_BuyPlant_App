@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/models/catogories_model.dart';
 import 'package:plant_app/models/plant_model&data.dart';
+import 'package:plant_app/pages/details_page.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -81,6 +82,8 @@ class _HomepageState extends State<Homepage> {
                       ],
                       borderRadius: BorderRadius.circular(10),
                     ),
+
+                    // Search field section
                     child: Row(
                       children: [
                         const SizedBox(
@@ -126,6 +129,8 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
+
+            // Category selection section
             SizedBox(
               height: 35,
               child: Row(
@@ -291,7 +296,14 @@ class _HomepageState extends State<Homepage> {
 
   Widget mainPlantCard(index) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetailsPage(plant: plants[index]),
+          ),
+        );
+      },
       child: Container(
         padding: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
