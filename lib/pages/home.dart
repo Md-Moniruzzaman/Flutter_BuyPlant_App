@@ -161,6 +161,8 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
+
+            // Plant Slider card........
             SizedBox(
               height: 320,
               child: PageView.builder(
@@ -176,11 +178,57 @@ class _HomepageState extends State<Homepage> {
                 },
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Populer',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  Image.asset(
+                    'assets/icons/more.png',
+                    color: Colors.teal,
+                    height: 40,
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 130,
+              child: ListView.builder(
+                  itemCount: populerPlants.length,
+                  physics: BouncingScrollPhysics(),
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (itemBuilder, index) {
+                    return Container(
+                      width: 200,
+                      margin: const EdgeInsets.only(right: 10, bottom: 10),
+                      decoration: BoxDecoration(
+                          color: Colors.lightGreen,
+                          // border: Border.all(1.0)
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.green.withOpacity(0.05),
+                                blurRadius: 10,
+                                offset: Offset(5, 5))
+                          ],
+                          borderRadius: BorderRadius.circular(20)),
+                    );
+                  }),
+            )
           ],
         ),
       ),
     );
   }
+
+  // Slider animation.....
 
   AnimatedContainer slider(active, index) {
     double margin = active ? 20 : 30;
@@ -191,6 +239,8 @@ class _HomepageState extends State<Homepage> {
       child: mainPlantCard(index),
     );
   }
+
+  // animation plant card design....
 
   Widget mainPlantCard(index) {
     return GestureDetector(
@@ -209,6 +259,8 @@ class _HomepageState extends State<Homepage> {
           borderRadius: BorderRadius.circular(30.0),
           border: Border.all(color: Colors.green, width: 2),
         ),
+
+        // stack lement thats showing over main card
         child: Stack(
           children: [
             Container(
