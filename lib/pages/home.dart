@@ -199,26 +199,73 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ),
+
+            // Popular plant Section.....
             SizedBox(
-              height: 130,
+              height: 180,
               child: ListView.builder(
                   itemCount: populerPlants.length,
-                  physics: BouncingScrollPhysics(),
+                  physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (itemBuilder, index) {
                     return Container(
                       width: 200,
                       margin: const EdgeInsets.only(right: 10, bottom: 10),
                       decoration: BoxDecoration(
-                          color: Colors.lightGreen,
-                          // border: Border.all(1.0)
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.green.withOpacity(0.05),
-                                blurRadius: 10,
-                                offset: Offset(5, 5))
-                          ],
-                          borderRadius: BorderRadius.circular(20)),
+                        color: Colors.grey.withOpacity(0.1),
+                        // border: Border.all(1.0)
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey.withOpacity(0.05),
+                              blurRadius: 10,
+                              offset: const Offset(0, 5))
+                        ],
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Stack(
+                        children: [
+                          Row(
+                            children: [
+                              Image.asset(
+                                populerPlants[index].imagePath,
+                                height: 100,
+                                width: 100,
+                              ),
+                              const SizedBox(width: 10),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    populerPlants[index].name,
+                                    style: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                      '\$${populerPlants[index].price.toStringAsFixed(0)}'),
+                                ],
+                              ),
+                            ],
+                          ),
+                          Positioned(
+                            right: 20.0,
+                            bottom: 20.0,
+                            child: GestureDetector(
+                              onTap: () {},
+                              child: CircleAvatar(
+                                backgroundColor: Colors.green,
+                                radius: 15,
+                                child: Image.asset(
+                                  'assets/icons/add.png',
+                                  height: 15,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     );
                   }),
             )
