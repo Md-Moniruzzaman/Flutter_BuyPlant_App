@@ -248,7 +248,7 @@ class _HomepageState extends State<Homepage> {
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
-                                      '\$${populerPlants[index].price.toStringAsFixed(0)}'),
+                                      'Tk. ${populerPlants[index].price.toStringAsFixed(0)}'),
                                 ],
                               ),
                             ],
@@ -357,7 +357,7 @@ class _HomepageState extends State<Homepage> {
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 5),
                 child: Text(
-                  '${plants[index].name} - \$${plants[index].price.toStringAsFixed(0)}',
+                  '${plants[index].name} - Tk. ${plants[index].price.toStringAsFixed(0)}',
                   style: TextStyle(
                     color: Colors.black.withOpacity(0.5),
                     fontWeight: FontWeight.bold,

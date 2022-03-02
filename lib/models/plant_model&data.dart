@@ -26,7 +26,7 @@ List<Plants> plants = [
     category: 'Office',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ',
-    price: 75.00,
+    price: 7500.00,
     isFavorit: false,
   ),
   Plants(
@@ -36,7 +36,7 @@ List<Plants> plants = [
     category: 'Office',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ',
-    price: 75.00,
+    price: 7500.00,
     isFavorit: false,
   ),
   Plants(
@@ -46,7 +46,7 @@ List<Plants> plants = [
     category: 'Office',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ',
-    price: 60.00,
+    price: 6035.00,
     isFavorit: false,
   ),
   Plants(
@@ -56,7 +56,7 @@ List<Plants> plants = [
     category: 'Office',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ',
-    price: 90.00,
+    price: 9000.00,
     isFavorit: false,
   ),
 ];
@@ -69,7 +69,7 @@ List<Plants> populerPlants = [
     category: 'Office',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ',
-    price: 75.00,
+    price: 6375.00,
     isFavorit: false,
   ),
   Plants(
@@ -79,7 +79,7 @@ List<Plants> populerPlants = [
     category: 'Office',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ',
-    price: 75.00,
+    price: 7000.00,
     isFavorit: false,
   ),
   Plants(
@@ -89,7 +89,7 @@ List<Plants> populerPlants = [
     category: 'Office',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ',
-    price: 60.00,
+    price: 5850.00,
     isFavorit: false,
   ),
 ];
